@@ -10,7 +10,7 @@ import { DataCustomerComponent } from './GoFinance/components/data-customer/data
 
 export const routes: Routes = [
   { path: '', redirectTo: '/register', pathMatch: 'full'},
-  { path: 'login', component: LoginComponent, canActivate: [AuthenticatedGuard]},
+  { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent, canActivate: [AuthenticatedGuard] },
   { path: 'history', component: HistorialComponent, canActivate: [AuthGuard] },
   { path: 'bills', component: BillsComponent, canActivate: [AuthGuard] },
